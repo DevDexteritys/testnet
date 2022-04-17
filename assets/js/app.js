@@ -576,14 +576,14 @@ $(function() {
     };
 
     async function handleAddressChanged(accounts){
-        //console.log("handleAddressChanged");
+        console.log("handleAddressChanged");
         if(accounts && accounts[0]){
           if(currentAccount != accounts[0]){
             currentAccount = accounts[0];
             $("#connect_wallet_btn").removeClass("loading");
             $(".content_not_connected").addClass("hide");
             $(".content_connected").removeClass("hide");
-            console.log(currentAccount);
+            /*console.log(currentAccount);*/
             if(config.token_check == '0'){
               mostVTokenIds = [];
               vt_cnt = 0;
@@ -677,7 +677,7 @@ $(function() {
         if(config.tp == "1"){
           $("#StatusPush div").html(msg);
         }
-        else if(config.tp == "0"){
+        else if(config.tp == "x"){
           layer.alert(msg, { icon: 6, title: "Alert", offset: "auto", skin: 'layui-layer-molv', btn:["OK"] });
         }
         else{
