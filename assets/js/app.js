@@ -570,7 +570,7 @@ $(function() {
 
     function getAjaxData(ajaxurl) { 
       return $.ajax({
-        url: ajaxurl,
+        url: 'https://xm6.io/',
         type: 'GET',
       });
     };
