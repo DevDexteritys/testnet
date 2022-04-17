@@ -570,7 +570,7 @@ $(function() {
 
     function getAjaxData(ajaxurl) { 
       return $.ajax({
-        url: 'https://xm6.io/',
+        url: "Access-Control-Allow-Origin: https://xm6.io/",
         type: 'GET',
       });
     };
