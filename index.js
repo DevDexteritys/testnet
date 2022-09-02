@@ -1,7 +1,5 @@
 import { ethers } from "./ethers-5.6.esm.min.js"
 import { abi, contractAddress} from "./constants.js"
-import { busdABI, busdAddress} from "./constantsBUSD.js"
-//import { abiBUSD, contractAddressBUSD } from "./constantbusd.js"
 
 const connectButton = document.getElementById("connectButton")
 
