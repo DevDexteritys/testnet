@@ -57,32 +57,6 @@ async function fund() {
   }
 }
 
-/*async function transferBUSD() {
-	  //const ethAmount = document.getElementById("ethAmount").value
-      console.log(`Funding with ${ethAmount}...`)
-	  
-      if (typeof window.ethereum !== "undefined") {
-		const provider = new ethers.providers.Web3Provider(window.ethereum)
-		const signer = provider.getSigner()
-		//const busdContract = new ethers.Contract(busdAddress, busdABI, signer);
-        try {
-		  busdContract = new ethers.Contract(busdAddress, busdABI, signer);
-          const ethAmount = document.getElementById("ethAmount").value
-		  busdContract.approve(contractAddress, ethAmount);
-		  contract = new ethers.Contract(contractAddress, abi, signer);
-          //const transactionResponse = await contract.fund({
-          //value: ethers.utils.parseEther(ethAmount),
-
-          
-        } catch (error) {
-          console.error(error.message, error.data.message);
-        } 
-      }
-      else {
-        document.getElementById("transferButton").innerHTML = "Please install MetaMask";
-      }
-    };*/
-
 
 function listenForTransactionMine(transactionResponse, provider) {
   console.log(`Mining ${transactionResponse.hash}`)
